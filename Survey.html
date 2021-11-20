@@ -1,0 +1,90 @@
+
+<DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no" >
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./Survey.css">
+ 
+
+
+</head>
+  <body>  
+    <div class="group">
+      
+      <header class="header">
+        <h1 id="title" class="text-center">Product survey form</h1>
+        <h2> Thank you for using this product</h2>
+      </header>
+      
+      <form id="survey-form">
+        <div class="form-group">
+          <strong>
+            <label id="name-label" for="name">Name</label><br></br>
+          </strong>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+          <strong>
+            <label id="email-label" for="email">Email</label><br></br>
+          </strong>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+         <strong>
+          <label id="name-label" for="name">Mobile No.</label><br></br>
+        </strong>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Number" required/>
+        <strong>
+          <label id="name-label" for="name">Address</label><br></br>
+        </strong>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Address" required/>
+        <strong>
+              <label id="number-label" for="number">Age <span class="option">(optional)</span></label><br></br></strong>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+         
+          <p>Select your gender?</p>
+          <label>
+            <input type="radio" name="gender" value="Male" class="input-radio"/>Male</label><br></br>
+            <label>
+              <input type="radio" name="gender" value="Female" class="input-radio"/>Female</label><br></br>
+            <label>
+              <input type="radio" name="gender" value="Other" class="input-radio"/>Other</label>
+        
+          <p> Would you recommend this product to others?</p>
+            <label>
+            <input type="radio" name="user-recommend" value="Definitely" class="input-radio"/>
+               Definitely</label>
+            <br></br>
+            <label>
+              <input type="radio" name="user-recommend" value="Maybe" class="input-radio"/>Maybe</label>
+              <br></br>
+            <label>
+              <input type="radio" name="user-recommend" value="Not sure" class="input-radio"/>Not sure
+            </label>
+
+          <p>What made you to buy this product?<span class="clue">(Check all that apply)</span></p>
+          <label>
+            <input name="prefer" value="Talcum powder" type="checkbox" class="input-checkbox"/>Talcum powder</label><br></br>
+          <label>
+            <input name="prefer" value="Perfume" type="checkbox" class="input-checkbox"/>Perfume</label><br></br>
+          <label>
+            <input name="prefer" value="Bathing soap" type="checkbox" class="input-checkbox"/>Bathing soap</label><br></br>
+          <label>
+            <input name="prefer" value="Washing soap" type="checkbox" class="input-checkbox"/>Washing soap</label><br></br>
+          <label>
+            <input name="prefer" value="sanitizer" type="checkbox" class="input-checkbox"/>Sanitizer
+            </label><br></br>
+          <label>
+            <input name="prefer" value="Shampoo" type="checkbox" class="input-checkbox"/>Shampoo</label><br></br>
+          <label>
+            <input name="prefer" value="face-wash" type="checkbox" class="input-checkbox"/>Face-wash</label><br></br>
+       
+            <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        
+        <button type="submit" id="submit" value="submit" class="submit-button">Submit</button>
+    </form>
+</div>
+</body>
+</html>      
+
+
